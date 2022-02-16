@@ -1,6 +1,6 @@
 <template>
   <div>
-    img
+    Le map
   </div>
 </template>
 

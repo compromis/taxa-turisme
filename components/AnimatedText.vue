@@ -10,6 +10,16 @@
       id: {
         type: String,
         required: true
+      },
+
+      duration: {
+        type: Number,
+        default: 1
+      },
+
+      delay: {
+        type: Number,
+        default: 0 
       }
     },
 
@@ -19,12 +29,15 @@
 
     methods: {
       animate () {
-        const gsap = this.$gsap
-        gsap.from(
+        this.$gsap.fromTo(
           `#${this.id}`,
           {
-            opacity: 0,
-            duration: 2,
+            opacity: 0
+          },
+          {
+            opacity: 1,
+            duration: this.duration,
+            delay: this.delay,
             scrollTrigger: {
               trigger: `#${this.id}`,
               start: 'top center',
@@ -40,5 +53,6 @@
 <style lang="scss" scoped>
   .animated-text {
     font-size: 40px;
+    line-height: 1.1;
   }
 </style>
