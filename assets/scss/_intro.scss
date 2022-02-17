@@ -3,6 +3,7 @@ $top-safe-area: 7rem;
 .intro {
   background: linear-gradient(to bottom, $green, $turquoise);
   padding-top: $top-safe-area;
+  overflow: hidden;
 
   &-text {
     z-index: 10;

@@ -16,10 +16,9 @@
           onComplete () {
             this.restart();
           }
-        });
+        })
 
-        tl.from('.intro-plane img',
-        {
+        tl.from('.intro-plane img', {
           x: '-100vh',
           y: '100vh',
           ease: 'easeOut.Power1',

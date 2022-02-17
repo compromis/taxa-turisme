@@ -14,8 +14,8 @@
       </div>
       <animated-plane class="intro-plane" data-depth="0.1" />
     </floaty-section>
-    <floaty-section id="Map" class="map">
-      <h2 class="map-text" data-depth="0.1">
+    <page-section id="Map" class="map">
+      <h2 class="map-text">
         <span class="map-text-content">
           Les ciutats
           <animated-underline id="MapTextLine1">més</animated-underline><br>
@@ -24,8 +24,13 @@
           tenen taxa turística
         </span>
       </h2>
-      <tax-map />
-    </floaty-section>
+      <div class="shift">
+        <tax-map />
+      </div>
+      <div class="shift">
+        Text de valencia
+      </div>
+    </page-section>
     <page-section id="Lie" class="lie">
       Lie
     </page-section>
