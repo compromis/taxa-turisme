@@ -47,7 +47,21 @@
       </div>
     </page-section>
     <page-section id="Lie" class="lie">
-      Lie
+      <bob-title></bob-title>
+      <div class="lie-text-animated"><animated-underline>Mentida!</animated-underline></div>
+      <h2 class="lie-text mt-4">Alguna vegada has deixat de visitar una ciutat per la taxa turística?</h2>
+      <span class="lie-text-content">De fet, ciutats amb menys turisme ja tenen taxa turística</span>
+      <marquee-line :repeat="50" class="lie-marquee" v-bind="$attrs">
+          <span class="city">Frankfurt <span class="tax">3€</span></span>
+          <span class="city">Frankfurt <span class="tax">3€</span></span>
+          <span class="city">Frankfurt <span class="tax">3€</span></span>
+      </marquee-line>
+      <span class="lie-text-content">I territoris com Catalunya i les Illes Balears la van implantar <animated-underline id="GraphTextLine">sense cap efecte negatiu</animated-underline></span>
+      <div class="lie-graphs mt-6">
+        <img src="@/assets/images/graphs/catalunya.svg" alt="">
+        <img src="@/assets/images/graphs/balears.svg" alt="">
+        <span>Font: Institut Nacional d'Estadística (INE)</span>
+      </div>
     </page-section>
     <page-section id="Funding" class="funding">
       <p class="funding-text">
@@ -101,6 +115,6 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
 }
 </script>
