@@ -1,3 +1,101 @@
 .funding {
   background: linear-gradient(to bottom, $purple, $orange);
+
+  &-text {
+    font-size: $headline-sm;
+    line-height: 1;
+    margin-bottom: 3rem;
+  }
+
+  &-items {
+    display: grid;
+    list-style: none;
+    margin: 3rem auto;
+    padding: 0;
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+
+    li:nth-child(even) {
+      --offset-y: 50%;
+      transform-origin: bottom left;
+
+      &.active {
+        --rotate: 4deg;
+      }
+    }
+
+    li:nth-child(odd) {
+      align-items: end;
+      text-align: right;
+      transform-origin: bottom right;
+
+      &.active {
+        --rotate: -4deg;
+      }
+    }
+  }
+
+  &-item {
+    display: flex;
+    position: relative;
+    border: 3px $white solid;
+    border-radius: 2.5rem;
+    padding: 2rem;
+    font-size: 2.25rem;
+    font-weight: 900;
+    aspect-ratio: 4 / 2;
+    flex-direction: column;
+    justify-content: center;
+    transition: .5s ease;
+    transform: translateY(var(--offset-y, 0));
+
+    &-text {
+      display: block;
+      line-height: 1;
+      max-width: 10ch;
+    }
+
+    &-money {
+      color: $black;
+      font-size: 1.5rem;
+      transform: translateY(100%);
+      transition: .5s ease;
+      opacity: 0;
+      background: $yellow;
+      width: fit-content;
+      border-radius: 2rem;
+      padding: 0 .75rem;
+      margin-top: .5rem;
+    }
+
+    img {
+      position: absolute;
+    }
+
+    &.active {
+      animation: FundingItem 1s;
+
+      .funding-item-money {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+@keyframes FundingItem {
+  50% {
+    background: $white;
+    color: #D27A7F;
+    box-shadow: 0 0 14px -5px $black;
+    transform: rotate(var(--rotate, 0)) translateY(var(--offset-y, 0));
+  }
+
+  100% {
+    background: transparent;
+    color: $white;
+    box-shadow: none;
+    transform: translateY(var(--offset-y, 0));
+  }
 }

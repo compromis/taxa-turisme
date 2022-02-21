@@ -3,20 +3,20 @@ $top-safe-area: 7rem;
 .intro {
   background: linear-gradient(to bottom, $green, $turquoise);
   padding-top: $top-safe-area;
-  overflow: hidden;
+  overflow-x: hidden;
 
   &-text {
     z-index: 10;
     height: calc(80vh - #{$top-safe-area * 2});
 
     &-content {
-    display: block;
-    font-size: clamp(2rem, 3.5vw, 6.5rem);
-    font-weight: 500;
-    line-height: 0.9;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+      display: block;
+      font-size: $headline-lg;
+      font-weight: 500;
+      line-height: 0.9;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 

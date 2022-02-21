@@ -17,13 +17,3 @@
     }
   }
 </script>
-
-<style lang="scss" scoped>
-  .page-section {
-    .container {
-      position: relative;
-      min-height: 100vh;
-      color: var(--white);
-    }
-  }
-</style>

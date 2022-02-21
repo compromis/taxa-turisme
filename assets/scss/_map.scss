@@ -1,13 +1,28 @@
 .map {
   background: linear-gradient(to bottom, $turquoise, $blue);
+  margin-top: -20vh;
 
   &-text {
     &-content {
       display: block;
-      font-size: clamp(1.5rem, 2.5vw, 4.5rem);
       font-weight: 500;
       line-height: 0.9;
-      transform: translateY(-20vh);
+    }
+
+    &-first {
+      margin-bottom: 3rem;
+
+      .map-text-content {
+        font-size: $headline-sm;
+      }
+    }
+  
+    &-valencia {
+      margin: 4rem 0 2.5rem;
+
+      .map-text-content {
+        font-size: $headline-lg;
+      }
     }
   }
 }

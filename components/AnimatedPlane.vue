@@ -14,7 +14,7 @@
       animatePlane () {
         const tl = this.$gsap.timeline({
           onComplete () {
-            this.restart();
+            this.restart()
           }
         })
 
