@@ -33,7 +33,7 @@
 
   &-marquee {
     margin-top: 3rem;
-    background: black;
+    background: $black;
     padding: 1rem;
     font-size: clamp(1.5rem, 1.5vw, 2.5rem);
     font-weight: 800;
@@ -41,11 +41,11 @@
 
     .city {
       color: $yellow;
-      margin-right: 1rem;
+      margin-right: 2rem;
     }
 
     .tax {
-      color: white;
+      color: $white;
     }
   }
 }

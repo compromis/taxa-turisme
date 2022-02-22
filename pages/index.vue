@@ -14,36 +14,38 @@
       </div>
       <animated-plane class="intro-plane" data-depth="0.1" />
     </floaty-section>
-    <page-section id="Map" class="map">
-      <h2 class="map-text map-text-first">
-        <span class="map-text-content">
-          Les ciutats
-          <animated-underline id="MapTextLine1">més</animated-underline><br>
-          <animated-underline id="MapTextLine2">visitades</animated-underline>
-          d'Europa<br>
-          tenen taxa turística
-        </span>
-      </h2>
+    <page-section id="Map" class="map" no-container>
       <div class="shift">
+        <div class="container">
+          <h2 class="map-text map-text-first">
+            <span class="map-text-content">
+              Les ciutats
+              <animated-underline id="MapTextLine1">més</animated-underline><br>
+              <animated-underline id="MapTextLine2">visitades</animated-underline>
+              d'Europa<br>
+              tenen taxa turística
+            </span>
+          </h2>
+        </div>
         <tax-map />
-      </div>
-      <div class="shift">
-        <h2 class="map-text map-text-valencia">
-          <span class="map-text-content">
-            <animated-underline id="ValenciaText">València</animated-underline>
-            és la <animated-circle id="ValenciaCircle" :delay="1">#15</animated-circle>
-            ciutat<br>
-            més visitada d'Europa
-          </span>
-        </h2>
-        <p class="headline-sm mb-5">
-          I encara no tenim taxa turística.
-        </p>
-        <p class="headline-sm">
-          Altres com Peníscola, Calp, Orpesa o Benidorm també són destins de referencia
-          europeus i converteixen el territori valencià en<br>
-          <animated-underline id="ValenciaMostVisited">un dels més visitats del món.</animated-underline>
-        </p>
+        <div class="container">
+          <h2 class="map-text map-text-valencia">
+            <span class="map-text-content">
+              <animated-underline id="ValenciaText">València</animated-underline>
+              és la <animated-circle id="ValenciaCircle" :delay="1">#15</animated-circle>
+              ciutat<br>
+              més visitada d'Europa
+            </span>
+          </h2>
+          <p class="headline-sm mb-5">
+            I encara no tenim taxa turística.
+          </p>
+          <p class="headline-sm">
+            Altres com Peníscola, Calp, Orpesa o Benidorm també són destins de referencia
+            europeus i converteixen el territori valencià en<br>
+            <animated-underline id="ValenciaMostVisited">un dels més visitats del món.</animated-underline>
+          </p>
+        </div>
       </div>
     </page-section>
     <page-section id="Lie" class="lie">
@@ -53,12 +55,7 @@
       </div>
       <h2 class="lie-text mt-4">Alguna vegada has deixat de visitar una ciutat per la taxa turística?</h2>
       <span class="lie-text-content">De fet, ciutats amb menys turisme ja tenen taxa turística</span>
-      <marquee-line :repeat="50" class="lie-marquee">
-          <span v-for="(tax, city, i) in cities" :key="i" class="city">
-            {{ city }}
-            <span>{{tax}}</span>
-          </span>
-      </marquee-line>
+      <cities-marquee />
       <span class="lie-text-content">
         I territoris com Catalunya i les Illes Balears la van implantar
         <animated-underline id="GraphTextLine">sense cap efecte negatiu</animated-underline>

@@ -1,6 +1,6 @@
 <template>
   <section class="page-section">
-    <div ref="scene" class="container">
+    <div ref="scene" class="main-container container">
       <slot />
     </div>
   </section>

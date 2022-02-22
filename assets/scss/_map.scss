@@ -1,7 +1,9 @@
 .map {
   background: linear-gradient(to bottom, $turquoise, $blue);
+  padding-left: 0;
+  padding-right: 0;
 
-  .container {
+  .shift {
     margin-top: -25vh;
   }
 
