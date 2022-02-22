@@ -36,27 +36,32 @@
             més visitada d'Europa
           </span>
         </h2>
-        <p class="text-md">
+        <p class="headline-sm mb-5">
           I encara no tenim taxa turística.
         </p>
-        <p class="text-md">
+        <p class="headline-sm">
           Altres com Peníscola, Calp, Orpesa o Benidorm també són destins de referencia
-          europeus i converteixen el territori valencià en
-          <animated-underline id="ValenciaMostVisited">un dels més visitats del món</animated-underline>.
+          europeus i converteixen el territori valencià en<br>
+          <animated-underline id="ValenciaMostVisited">un dels més visitats del món.</animated-underline>
         </p>
       </div>
     </page-section>
     <page-section id="Lie" class="lie">
-      <bob-title></bob-title>
-      <div class="lie-text-animated"><animated-underline>Mentida!</animated-underline></div>
+      <bob-title />
+      <div class="lie-text-animated">
+        <animated-underline id="LieOverTitle">Mentida!</animated-underline>
+      </div>
       <h2 class="lie-text mt-4">Alguna vegada has deixat de visitar una ciutat per la taxa turística?</h2>
       <span class="lie-text-content">De fet, ciutats amb menys turisme ja tenen taxa turística</span>
-      <marquee-line :repeat="50" class="lie-marquee" v-bind="$attrs">
+      <marquee-line :repeat="50" class="lie-marquee">
           <span class="city">Frankfurt <span class="tax">3€</span></span>
           <span class="city">Frankfurt <span class="tax">3€</span></span>
           <span class="city">Frankfurt <span class="tax">3€</span></span>
       </marquee-line>
-      <span class="lie-text-content">I territoris com Catalunya i les Illes Balears la van implantar <animated-underline id="GraphTextLine">sense cap efecte negatiu</animated-underline></span>
+      <span class="lie-text-content">
+        I territoris com Catalunya i les Illes Balears la van implantar
+        <animated-underline id="GraphTextLine">sense cap efecte negatiu</animated-underline>
+      </span>
       <div class="lie-graphs mt-6">
         <img src="@/assets/images/graphs/catalunya.svg" alt="">
         <img src="@/assets/images/graphs/balears.svg" alt="">
@@ -79,31 +84,31 @@
       <ul class="funding-items">
         <funding-item id="Cleaning">
           Neteja de carrers
-          <img src="~/assets/images/funding/netejadora.webp" style="left: -38px;bottom: 13px;width: 277px;" alt="">
+          <img src="~/assets/images/funding/netejadora.webp" style="left: -38px; bottom: 13px; width: 277px;" alt="">
         </funding-item>
         <funding-item id="ParksAndRec">
           Manteniment de Parcs
-          <img src="~/assets/images/funding/arbre.webp" style="right: -46px;bottom: 0;width: 216px;" alt="">
+          <img src="~/assets/images/funding/arbre.webp" style="right: -46px; bottom: 0; width: 216px;" alt="">
         </funding-item>
         <funding-item id="Five-O">
           Seguretat
-          <img src="~/assets/images/funding/five-o.webp" style="left: -86px;bottom: 20px;width: 301px;" alt="">
+          <img src="~/assets/images/funding/five-o.webp" style="left: -86px; bottom: 20px; width: 301px;" alt="">
         </funding-item>
         <funding-item id="Transport">
           Transport públic
-          <img src="~/assets/images/funding/bus.webp" style="right: -143px;bottom: 15px;width: 349px;" alt="">
+          <img src="~/assets/images/funding/bus.webp" style="right: -143px; bottom: 15px; width: 349px;" alt="">
         </funding-item>
         <funding-item id="Heritage">
           Protecció del patrimoni
-          <img src="~/assets/images/funding/micalet.webp" style="left: 31px;bottom: 0;width: 138px;" alt="">
+          <img src="~/assets/images/funding/micalet.webp" style="left: 31px; bottom: 0; width: 138px;" alt="">
         </funding-item>
         <funding-item id="Meritxell">
           Revertir impacte ambiental
-          <img src="~/assets/images/funding/avio.webp" style="right: -179px;bottom: 48px;width: 393px;" alt="">
+          <img src="~/assets/images/funding/avio.webp" style="right: -179px; bottom: 48px; width: 393px;" alt="">
         </funding-item>
-        <funding-item id="Beach">
+        <funding-item id="Baywatch">
           Manteniment de platges
-          <img src="~/assets/images/funding/avio.webp" style="left: 0; bottom: 0; width: 100px" alt="">
+          <img src="~/assets/images/funding/socorrista.webp" style="left: -37px; bottom: 0; width: 163px;" alt="">
         </funding-item>
       </ul>
     </page-section>

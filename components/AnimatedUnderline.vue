@@ -62,6 +62,7 @@
 <style lang="scss" scoped>
   .underlined {
     position: relative;
+    white-space: nowrap;
 
     .text {
       position: relative;

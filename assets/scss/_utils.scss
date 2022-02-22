@@ -1,15 +1,11 @@
 .headline-sm {
   font-size: $headline-sm !important;
-  line-height: 0.9 !important;
+  line-height: 1 !important;
+  max-width: 27ch;
 }
 
 .headline-lg {
   font-size: $headline-lg !important;
-  line-height: 0.9 !important;
+  line-height: 1 !important;
 }
 
-.text-md {
-  font-size: 2.25rem;
-  max-width: 40ch;
-  line-height: 1.1;
-}

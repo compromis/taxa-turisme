@@ -1,12 +1,15 @@
 .map {
   background: linear-gradient(to bottom, $turquoise, $blue);
-  margin-top: -20vh;
+
+  .container {
+    margin-top: -25vh;
+  }
 
   &-text {
     &-content {
       display: block;
       font-weight: 500;
-      line-height: 0.9;
+      line-height: 1;
     }
 
     &-first {

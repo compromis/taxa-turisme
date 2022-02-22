@@ -32,6 +32,10 @@
             trigger: `#${this.id}`,
             start: 'center 70%',
             toggleClass: 'active'
+          },
+          onComplete () {
+            const audio = new Audio('/sounds/cash.mp3')
+            audio.play()
           }
         })
       }
