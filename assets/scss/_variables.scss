@@ -1,12 +1,12 @@
 /* Colors */
 $white: #fff;
 $black: #171717;
-$green: #73C271;
-$turquoise: #55C991;
-$blue: #408DD4;
-$purple: #C175D4;
-$orange: #DE7B34;
-$yellow: #F0BE0B;
+$green: #73c271;
+$turquoise: #55c991;
+$blue: #408dd4;
+$purple: #c175d4;
+$orange: #de7b34;
+$yellow: #f0be0b;
 
 /* Navbar */
 $navbar-safe-area: 0;
@@ -16,6 +16,6 @@ $postcard-radius: 3rem;
 
 /* Text sizes */
 $text-md: 1.5rem;
-$headline-sm: clamp(2rem, 2.5vw, 2.85rem);
-$headline-lg: clamp(3rem, 3.5vw, 4rem);
-$headline-xl: clamp(3.5rem, 5vw, 6rem);
+$headline-sm: clamp(1.5rem, 2.5vw, 2.85rem);
+$headline-lg: clamp(2.25rem, 3.5vw, 4rem);
+$headline-xl: clamp(3rem, 5vw, 6rem);

@@ -54,18 +54,21 @@
       <h2 class="lie-text mt-4">Alguna vegada has deixat de visitar una ciutat per la taxa turística?</h2>
       <span class="lie-text-content">De fet, ciutats amb menys turisme ja tenen taxa turística</span>
       <marquee-line :repeat="50" class="lie-marquee">
-          <span class="city">Frankfurt <span class="tax">3€</span></span>
-          <span class="city">Frankfurt <span class="tax">3€</span></span>
-          <span class="city">Frankfurt <span class="tax">3€</span></span>
+          <span v-for="(tax, city, i) in cities" :key="i" class="city">
+            {{ city }}
+            <span>{{tax}}</span>
+          </span>
       </marquee-line>
       <span class="lie-text-content">
         I territoris com Catalunya i les Illes Balears la van implantar
         <animated-underline id="GraphTextLine">sense cap efecte negatiu</animated-underline>
       </span>
-      <div class="lie-graphs mt-6">
-        <img src="@/assets/images/graphs/catalunya.svg" alt="">
-        <img src="@/assets/images/graphs/balears.svg" alt="">
-        <span>Font: Institut Nacional d'Estadística (INE)</span>
+      <div class="lie-graphs-section mt-6">
+        <div class="lie-graphs">
+          <img src="@/assets/images/graphs/catalunya.svg" alt="">
+          <img src="@/assets/images/graphs/balears.svg" alt="">
+        </div>
+        <div class="mt-3">Font: Institut Nacional d'Estadística (INE)</div>
       </div>
     </page-section>
     <page-section id="Funding" class="funding">
@@ -84,31 +87,31 @@
       <ul class="funding-items">
         <funding-item id="Cleaning">
           Neteja de carrers
-          <img src="~/assets/images/funding/netejadora.webp" style="left: -38px; bottom: 13px; width: 277px;" alt="">
+          <img src="~/assets/images/funding/netejadora.webp" alt="">
         </funding-item>
         <funding-item id="ParksAndRec">
           Manteniment de Parcs
-          <img src="~/assets/images/funding/arbre.webp" style="right: -46px; bottom: 0; width: 216px;" alt="">
+          <img src="~/assets/images/funding/arbre.webp" alt="">
         </funding-item>
         <funding-item id="Five-O">
           Seguretat
-          <img src="~/assets/images/funding/five-o.webp" style="left: -86px; bottom: 20px; width: 301px;" alt="">
+          <img src="~/assets/images/funding/five-o.webp"  alt="">
         </funding-item>
         <funding-item id="Transport">
           Transport públic
-          <img src="~/assets/images/funding/bus.webp" style="right: -143px; bottom: 15px; width: 349px;" alt="">
+          <img src="~/assets/images/funding/bus.webp" alt="">
         </funding-item>
         <funding-item id="Heritage">
           Protecció del patrimoni
-          <img src="~/assets/images/funding/micalet.webp" style="left: 31px; bottom: 0; width: 138px;" alt="">
+          <img src="~/assets/images/funding/micalet.webp" alt="">
         </funding-item>
         <funding-item id="Meritxell">
           Revertir impacte ambiental
-          <img src="~/assets/images/funding/avio.webp" style="right: -179px; bottom: 48px; width: 393px;" alt="">
+          <img src="~/assets/images/funding/avio.webp" alt="">
         </funding-item>
         <funding-item id="Baywatch">
           Manteniment de platges
-          <img src="~/assets/images/funding/socorrista.webp" style="left: -37px; bottom: 0; width: 163px;" alt="">
+          <img src="~/assets/images/funding/socorrista.webp" alt="">
         </funding-item>
       </ul>
     </page-section>
@@ -121,5 +124,27 @@
 <script>
 export default {
   name: 'IndexPage',
+
+  data() {
+    return {
+      cities: {
+        Girona: '0,5 a 2,25€',
+        Menorca:	'2 a 4€',
+        Tarragona: '0,5 a 2,25€',
+        Frankfurt: '2€',
+        Salzburg: '1,1€',
+        Dubrovnik: '1,1€',
+        Edinburg: '2,60€',
+        Bratislava: '0,5 a 1,65€',
+        Lió: '3,2€',
+        Tolosa: '0,55 a 2,65€',
+        Rotterdam: '6.5%',
+        Torí: '2,8€ a 5€',
+        Florència: '4 a 5,5€ ',
+        Zürich: '2,2€',
+        Kiev: '1%'
+      }
+    }
+  },
 }
 </script>

@@ -46,3 +46,15 @@ $top-safe-area: 7rem;
     }
   }
 }
+
+@include media-breakpoint-down(md) {
+  .intro-postcard img {
+    transform: translate(120px, -100px) rotate(-1deg);
+  }
+
+  .intro-plane img {
+    right: 4vw;
+    width: 50vw;
+    bottom: 45vh;
+  }
+}

@@ -24,7 +24,7 @@
 
       delay: {
         type: Number,
-        default: 0 
+        default: 0
       }
     },
 
@@ -59,6 +59,9 @@
 </script>
 
 <style lang="scss" scoped>
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
   .circled {
     position: relative;
 
@@ -82,4 +85,14 @@
       }
     }
   }
+
+   @include media-breakpoint-down (md) {
+     .circled .circle {
+       bottom: -0.25em;
+
+       &-path {
+         stroke-width: 5;
+       }
+     }
+   }
 </style>

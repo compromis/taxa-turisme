@@ -24,7 +24,7 @@
 
       delay: {
         type: Number,
-        default: 0 
+        default: 0
       }
     },
 
@@ -60,6 +60,9 @@
 </script>
 
 <style lang="scss" scoped>
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
   .underlined {
     position: relative;
     white-space: nowrap;
@@ -82,6 +85,18 @@
         stroke: #F0BE0B;
         stroke-width: 7;
         vector-effect: non-scaling-stroke;
+      }
+    }
+  }
+
+  @include media-breakpoint-down (md) {
+    .underlined {
+      .line {
+        bottom: 0.05em;
+
+        &-path {
+          stroke-width: 5;
+        }
       }
     }
   }

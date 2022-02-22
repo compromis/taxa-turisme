@@ -1,5 +1,6 @@
 .lie {
   background: linear-gradient(to bottom, $blue, $purple);
+  overflow: hidden;
 
   &-text {
     font-size: $headline-xl;
@@ -26,7 +27,7 @@
 
   &-graphs {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 3rem;
   }
 
@@ -46,5 +47,12 @@
     .tax {
       color: white;
     }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .lie-marquee {
+    margin: 1.5rem -8rem;
+    border-radius: 0;
   }
 }

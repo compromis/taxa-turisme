@@ -1,5 +1,6 @@
 .funding {
   background: linear-gradient(to bottom, $purple, $orange);
+  overflow: hidden;
 
   &-text {
     font-size: $headline-sm;
@@ -42,12 +43,12 @@
     border: 3px $white solid;
     border-radius: 2.5rem;
     padding: 2rem;
-    font-size: 2.25rem;
+    font-size: clamp(1.5rem, 5.5vw, 2.25rem);
     font-weight: 900;
     aspect-ratio: 4 / 2;
     flex-direction: column;
     justify-content: center;
-    transition: .5s ease;
+    transition: 0.5s ease;
     transform: translateY(var(--offset-y, 0));
 
     &-text {
@@ -60,13 +61,13 @@
       color: $black;
       font-size: 1.5rem;
       transform: translateY(100%);
-      transition: .5s ease;
+      transition: 0.5s ease;
       opacity: 0;
       background: $yellow;
       width: fit-content;
       border-radius: 2rem;
-      padding: 0 .75rem;
-      margin-top: .5rem;
+      padding: 0 0.75rem;
+      margin-top: 0.5rem;
     }
 
     img {
@@ -82,12 +83,54 @@
       }
     }
   }
+
+  #Cleaning img {
+    left: -38px;
+    bottom: 13px;
+    width: 277px;
+  }
+
+  #ParksAndRec img {
+    right: -46px;
+    bottom: 0;
+    width: 216px;
+  }
+
+  #Five-O img {
+    left: -86px;
+    bottom: 20px;
+    width: 301px;
+  }
+
+  #Transport img {
+    right: -143px;
+    bottom: 15px;
+    width: 349px;
+  }
+
+  #Heritage img {
+    left: 31px;
+    bottom: 0;
+    width: 138px;
+  }
+
+  #Meritxell img {
+    right: -179px;
+    bottom: 48px;
+    width: 393px;
+  }
+
+  #Baywatch img {
+    left: -37px;
+    bottom: 0;
+    width: 163px;
+  }
 }
 
 @keyframes FundingItem {
   50% {
     background: $white;
-    color: #D27A7F;
+    color: #d27a7f;
     box-shadow: 0 0 14px -5px $black;
     transform: rotate(var(--rotate, 0)) translateY(var(--offset-y, 0));
   }
@@ -97,5 +140,57 @@
     color: $white;
     box-shadow: none;
     transform: translateY(var(--offset-y, 0));
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .funding {
+    &-items {
+      grid-template-columns: 1fr;
+      max-width: 550px;
+
+      li:nth-child(even) {
+        --offset-y: 0;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .funding {
+    #Cleaning img {
+      width: 238px;
+    }
+
+    #ParksAndRec img {
+      width: 161px;
+    }
+
+    #Five-O img {
+      bottom: -22px;
+      width: 268px;
+    }
+
+    #Heritage img {
+      left: 22px;
+      width: 102px;
+    }
+
+    #Transport img {
+      right: -108px;
+      bottom: -35px;
+      width: 312px;
+    }
+
+    #Meritxell img {
+      right: -204px;
+      bottom: 23px;
+      width: 377px;
+    }
+
+    #Baywatch img {
+      left: -27px;
+      width: 147px;
+    }
   }
 }

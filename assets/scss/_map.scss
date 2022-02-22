@@ -19,13 +19,21 @@
         font-size: $headline-sm;
       }
     }
-  
+
     &-valencia {
       margin: 4rem 0 2.5rem;
 
       .map-text-content {
         font-size: $headline-lg;
       }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .map {
+    .container {
+      margin-top: -32vh;
     }
   }
 }
