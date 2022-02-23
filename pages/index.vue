@@ -121,27 +121,5 @@
 <script>
 export default {
   name: 'IndexPage',
-
-  data() {
-    return {
-      cities: {
-        Girona: '0,5 a 2,25€',
-        Menorca:	'2 a 4€',
-        Tarragona: '0,5 a 2,25€',
-        Frankfurt: '2€',
-        Salzburg: '1,1€',
-        Dubrovnik: '1,1€',
-        Edinburg: '2,60€',
-        Bratislava: '0,5 a 1,65€',
-        Lió: '3,2€',
-        Tolosa: '0,55 a 2,65€',
-        Rotterdam: '6.5%',
-        Torí: '2,8€ a 5€',
-        Florència: '4 a 5,5€ ',
-        Zürich: '2,2€',
-        Kiev: '1%'
-      }
-    }
-  },
 }
 </script>

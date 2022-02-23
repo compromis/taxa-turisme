@@ -1,5 +1,5 @@
 <template>
-  <marquee-line :repeat="50" class="lie-marquee">
+  <marquee-line class="lie-marquee" :duration="30">
       <span v-for="city in cities" :key="city.name" class="city">
         {{ city.name }}
         <span class="tax">{{ city.tax }}</span>
