@@ -1,5 +1,7 @@
 .lie {
+  padding-top: clamp(3rem, 10vw, 8rem);
   background: linear-gradient(to bottom, $blue, $purple);
+  overflow-x: hidden;
 
   &-text {
     font-size: $headline-xl;
