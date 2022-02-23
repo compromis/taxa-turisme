@@ -28,7 +28,7 @@
           </h2>
         </div>
         <tax-map />
-        <div class="container">
+        <div class="container shift-md">
           <h2 class="map-text map-text-valencia">
             <span class="map-text-content">
               <animated-underline id="ValenciaText">València</animated-underline>

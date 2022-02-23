@@ -40,9 +40,9 @@ $top-safe-area: 7rem;
 
     img {
       position: absolute;
-      right: 5vw;
-      bottom: 28vh;
-      width: 25vw;
+      left: 0;
+      bottom: 50%;
+      width: calc(25rem + 8vw);
     }
   }
 }

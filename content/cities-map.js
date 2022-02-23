@@ -75,18 +75,18 @@ export default {
     name: 'Amsterdam',
     tax: '7%',
     description: "del cost de l'allotjament",
-    image: require('../assets/images/cities/viena.webp')
+    image: require('../assets/images/cities/amsterdam.webp')
   },
   brussels: {
     name: 'Brussel·les',
     tax: '4,24€',
     description: 'per nit',
-    image: require('../assets/images/cities/viena.webp')
+    image: require('../assets/images/cities/brusseles.webp')
   },
   rome: {
     name: 'Roma',
     tax: '4 a 7€',
     description: 'per nit',
-    image: require('../assets/images/cities/viena.webp')
+    image: require('../assets/images/cities/roma.webp')
   }
 }

@@ -4,7 +4,11 @@
   padding-right: 0;
 
   .shift {
-    margin-top: -25vh;
+    margin-top: -30vh;
+
+    &-md {
+      margin-top: -10vh;
+    }
   }
 
   &-text {

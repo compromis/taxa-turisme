@@ -43,7 +43,7 @@
           },
           {
             strokeDashoffset: 0,
-            duration: 1,
+            duration: 0.75,
             delay: 0.75 + this.delay,
             ease: 'Linear.easeOut',
             scrollTrigger: {

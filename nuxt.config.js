@@ -47,7 +47,8 @@ export default {
   // Gsap
   gsap: {
     extraPlugins: {
-      scrollTrigger: true
+      scrollTrigger: true,
+      motionPath: true
     }
   }
 }

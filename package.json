@@ -14,7 +14,7 @@
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix && yarn lint:style --fix"
   },
   "dependencies": {
-    "@compromis/blobby": "../blobby",
+    "@compromis/blobby": "1.1.2",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
     "parallax-js": "^3.1.0",
