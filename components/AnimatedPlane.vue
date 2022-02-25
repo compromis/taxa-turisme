@@ -34,7 +34,7 @@
           x: '100vw',
           y: '-80vh',
           ease: 'easeIn.Power1',
-          duration: 10
+          duration: 8
         })
       }
     }

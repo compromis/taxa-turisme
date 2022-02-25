@@ -89,10 +89,13 @@
           duration: 3,
           scrollTrigger: {
             trigger: '.map-holder',
-            start: '1000px 500px',
-            end: '1000px -1000px',
-            scrub: true,
-            markers: true
+            start: 'bottom 100vh',
+            end: 'bottom -150vh',
+            scrub: true
+          },
+          onStart () {
+            console.log('start')
+            this.currentCity = 'valencia'
           }
         })
       },
@@ -152,7 +155,7 @@
 @import "@compromis/blobby/scss/variables";
 
 .rail {
-  height: 250vh;
+  height: 200vh;
 }
 
 .map-holder {

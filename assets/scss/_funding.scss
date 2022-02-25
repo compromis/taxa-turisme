@@ -5,13 +5,13 @@
   &-text {
     font-size: $headline-sm;
     line-height: 1;
-    margin-bottom: 3rem;
+    margin-bottom: 5vh;
   }
 
   &-items {
     display: grid;
     list-style: none;
-    margin: 3rem auto;
+    margin: 5vh auto;
     padding: 0;
     gap: 4rem;
     grid-template-columns: 1fr 1fr;

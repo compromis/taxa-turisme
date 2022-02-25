@@ -119,25 +119,25 @@
       <div class="headline-sm mt-4">A més, la taxa turística ajuda a crear un model de turisme amb projecció de futur, de qualitat, sostenible i que genera més riquesa. </div>
       <div class="conclusions-annex-title">Més informació</div>
       <div class="conclusions-annex-grid mt-4">
-        <a class="conclusions-annex-card row-span-2" href="https://valenciaplaza.com/tasa-turistica-cataluna-baleares-197-millones-ingresos-mas-viajeros" target="_blank" rel="noopener noreferer">
+        <a class="conclusions-annex-card row-span-2 focus-dark" href="https://valenciaplaza.com/tasa-turistica-cataluna-baleares-197-millones-ingresos-mas-viajeros" target="_blank" rel="noopener noreferer">
           <h2>La tasa turística en Cataluña y Baleares: 197 millones en ingresos y más viajeros hasta la covid</h2>
           <div class="mt-auto">Valencia Plaza</div>
         </a>
-        <a class="conclusions-annex-card conclusions-annex-document" href="https://www.researchgate.net/publication/347919126_Tourist_Tax_to_Improve_Sustainability_and_the_Experience_in_Mass_Tourism_Destinations_The_Case_of_Andalusia_Spain" target="_blank" rel="noopener noreferer">
+        <a class="conclusions-annex-card conclusions-annex-document focus-dark" href="https://www.researchgate.net/publication/347919126_Tourist_Tax_to_Improve_Sustainability_and_the_Experience_in_Mass_Tourism_Destinations_The_Case_of_Andalusia_Spain" target="_blank" rel="noopener noreferer">
           <span class="document-tag">PDF</span> Tourist Tax to Improve Sustainability and the Experience in Mass Tourism Destinations: The Case of Andalusia (Spain)
         </a>
-        <a class="conclusions-annex-card row-span-3" href="https://valenciaplaza.com/la-tasa-turistica-por-que-solo-debemos-pagar-los-valencianos" target="_blank" rel="noopener noreferer">
+        <a class="conclusions-annex-card row-span-3 focus-dark" href="https://valenciaplaza.com/la-tasa-turistica-por-que-solo-debemos-pagar-los-valencianos" target="_blank" rel="noopener noreferer">
           <h2>La tasa turística: ¿por qué solo debemos pagar los valencianos?</h2>
           <div class="mt-auto">Valencia Plaza</div>
         </a>
-        <a class="conclusions-annex-card conclusions-annex-document" href="https://www.liligo.es/magazine-viajes/tasas-turisticas-espana-europa" target="_blank" rel="noopener noreferer">
+        <a class="conclusions-annex-card conclusions-annex-document focus-dark" href="https://www.liligo.es/magazine-viajes/tasas-turisticas-espana-europa" target="_blank" rel="noopener noreferer">
           <span class="document-tag">WEB</span> Las tasas turísticas en España y Europa en 2019
         </a>
-        <a class="conclusions-annex-card row-span-2" href="https://valenciaplaza.com/la-tasa-turistica-por-que-solo-debemos-pagar-los-valencianos" target="_blank" rel="noopener noreferer">
+        <a class="conclusions-annex-card row-span-2 focus-dark" href="https://valenciaplaza.com/la-tasa-turistica-por-que-solo-debemos-pagar-los-valencianos" target="_blank" rel="noopener noreferer">
           <h2>A favor de la tasa turística</h2>
           <div class="mt-auto">Málaga Hoy</div>
         </a>
-        <a class="conclusions-annex-card conclusions-annex-document" href="https://www.e-unwto.org/doi/pdf/10.18111/9789284421992" target="_blank" rel="noopener noreferer">
+        <a class="conclusions-annex-card conclusions-annex-document focus-dark" href="https://www.e-unwto.org/doi/pdf/10.18111/9789284421992" target="_blank" rel="noopener noreferer">
           <span class="document-tag">PDF</span> Las emisiones de CO2 del sector turístico
         </a>
       </div>
