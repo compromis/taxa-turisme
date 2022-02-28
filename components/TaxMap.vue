@@ -22,9 +22,9 @@
           </div>
           <transition name="card">
             <div v-if="currentCard" class="card float-card" :style="cardAbsolutePosition">
-              <h3 class="card-title">{{ currentCityCard.name }}</h3>
+              <h3 class="card-title">{{ currentCityCard.name[lang] }}</h3>
               <p class="card-tax">{{ currentCityCard.tax }}</p>
-              <p class="card-description">{{ currentCityCard.description }}</p>
+              <p class="card-description">{{ currentCityCard.description[lang] }}</p>
             </div>
           </transition>
         </div>
@@ -33,9 +33,9 @@
     <div ref="cityCards" class="city-cards" @scroll="handleScroll">
       <ul>
         <li v-for="[ref, city] in Object.entries(cities)" :key="ref" class="card">
-          <h3 class="card-title">{{ city.name }}</h3>
+          <h3 class="card-title">{{ city.name[lang] }}</h3>
           <p class="card-tax">{{ city.tax }}</p>
-          <p class="card-description">{{ city.description }}</p>
+          <p class="card-description">{{ city.description[lang] }}</p>
         </li>
         <li class="spacer"></li>
       </ul>
@@ -43,7 +43,7 @@
   </div>
 </template>
 
-<script> 
+<script>
   import MapSvg from './MapSvg'
   import cities from '@/content/cities-map'
 
@@ -74,6 +74,10 @@
           left: (this.cardPos.x + 20) + 'px',
           top: (this.cardPos.y + 20) + 'px'
         }
+      },
+
+      lang () {
+        return this.$route.name === 'cas' ? 'cas' : 'val'
       }
     },
 

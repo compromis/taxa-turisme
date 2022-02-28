@@ -1,13 +1,18 @@
 <template>
     <div class="bob-title">
-      <img src="@/assets/images/spongebob/title-bob.svg" alt="Però això farà que el turisme baixe!">
+      <img v-if="lang === 'cas'" src="@/assets/images/spongebob/title-cas.svg" alt="Pero eso hará que el turismo baje!">
+      <img v-else src="@/assets/images/spongebob/title-bob.svg" alt="Però això farà que el turisme baixe!">
       <img class="face" src="@/assets/images/spongebob/colmenero.webp" alt="">
     </div>
 </template>
 
 <script>
   export default {
-
+    computed: {
+      lang() {
+        return this.$route.name === 'cas' ? 'cas' : 'val'
+      }
+    },
   }
 </script>
 

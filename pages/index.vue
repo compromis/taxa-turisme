@@ -10,7 +10,7 @@
         </span>
       </h2>
       <div class="intro-postcard" data-depth="0.3">
-        <img src="~assets/images/cities/benidorm.jpg" alt="">
+        <img src="~assets/images/cities/benidorm.jpg" alt="Els gratacels i la costa de Benidorm">
       </div>
       <animated-plane class="intro-plane" data-depth="0.1" />
     </floaty-section>
@@ -55,15 +55,15 @@
       </div>
       <h2 class="lie-text mt-4">Alguna vegada has deixat de visitar una ciutat per la taxa turística?</h2>
       <span class="lie-text-content">De fet, ciutats amb menys turisme ja tenen taxa turística</span>
-      <cities-marquee />
+      <cities-marquee lang="cas"/>
       <span class="lie-text-content">
         I territoris com Catalunya i les Illes Balears la van implantar
         <animated-underline id="GraphTextLine">sense cap efecte negatiu</animated-underline>
       </span>
       <div class="lie-graphs-section mt-6">
         <div class="lie-graphs">
-          <img src="@/assets/images/graphs/catalunya.svg" alt="">
-          <img src="@/assets/images/graphs/balears.svg" alt="">
+          <img src="@/assets/images/graphs/catalunya.svg" alt="Gràfica de línies que mostra el creixement del turisme en Catalunya, que no decau quan s'aplica la taxa turística en 2012">
+          <img src="@/assets/images/graphs/balears.svg" alt="Gràfica de línies que mostra el creixement del turisme en Les Illes Balears, que no decau quan s'aplica la taxa turística en 2016">
         </div>
         <div class="mt-3">Font: Institut Nacional d'Estadística (INE)</div>
       </div>
@@ -84,31 +84,31 @@
       <ul class="funding-items">
         <funding-item id="Cleaning">
           Neteja de carrers
-          <img src="~/assets/images/funding/netejadora.webp" alt="">
+          <img src="~/assets/images/funding/netejadora.webp" alt="Máquina netejadora de carrer">
         </funding-item>
         <funding-item id="ParksAndRec">
           Manteniment de Parcs
-          <img src="~/assets/images/funding/arbre.webp" alt="">
+          <img src="~/assets/images/funding/arbre.webp" alt="Arbre de tronc ample i amb copa poblada de fulles">
         </funding-item>
         <funding-item id="Five-O">
           Seguretat
-          <img src="~/assets/images/funding/five-o.webp"  alt="">
+          <img src="~/assets/images/funding/five-o.webp"  alt="Cotxe de la Policia local de València">
         </funding-item>
         <funding-item id="Transport">
           Transport públic
-          <img src="~/assets/images/funding/bus.webp" alt="">
+          <img src="~/assets/images/funding/bus.webp" alt="Autobús de la EMT de València">
         </funding-item>
         <funding-item id="Heritage">
           Protecció del patrimoni
-          <img src="~/assets/images/funding/micalet.webp" alt="">
+          <img src="~/assets/images/funding/micalet.webp" alt="Torre del Micalet de València">
         </funding-item>
         <funding-item id="Meritxell">
           Revertir impacte ambiental
-          <img src="~/assets/images/funding/avio.webp" alt="">
+          <img src="~/assets/images/funding/avio.webp" alt="Avió comercial de passatgers">
         </funding-item>
         <funding-item id="Baywatch">
           Manteniment de platges
-          <img src="~/assets/images/funding/socorrista.webp" alt="">
+          <img src="~/assets/images/funding/socorrista.webp" alt="Cadira de socorrista de platja amb una socorrista asseguda d'esquenes.">
         </funding-item>
       </ul>
     </page-section>

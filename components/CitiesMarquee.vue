@@ -1,7 +1,7 @@
 <template>
   <marquee-line class="lie-marquee" :duration="30">
-      <span v-for="city in cities" :key="city.name" class="city">
-        {{ city.name }}
+      <span v-for="city in cities" :key="city.name.val" class="city">
+        <span>{{ city.name[lang] }}</span>
         <span class="tax">{{ city.tax }}</span>
       </span>
   </marquee-line>
@@ -15,6 +15,12 @@
       return {
         cities
       }
-    }
+    },
+
+    computed: {
+      lang() {
+        return this.$route.name === 'cas' ? 'cas' : 'val'
+      }
+    },
   }
 </script>

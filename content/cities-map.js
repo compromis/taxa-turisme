@@ -1,92 +1,182 @@
 export default {
   paris: {
-    name: 'Paris',
+    name: {
+      val: 'Paris',
+      cas: 'Paris',
+    },
     tax: '0,25 a 4,5€',
-    description: 'per nit',
+    description: {
+      val: 'per nit',
+      cas: 'por noche',
+    },
     image: require('../assets/images/cities/paris.webp')
   },
   athens: {
-    name: 'Atenes',
+    name: {
+      val: 'Atenes',
+      cas: 'Atenas',
+    },
     tax: '0,5 a 4€',
-    description: 'per nit',
+    description: {
+      val: 'per nit',
+      cas: 'por noche',
+    },
     image: require('../assets/images/cities/atenes.webp')
   },
   barcelona: {
-    name: 'Barcelona',
+    name: {
+      val: 'Barcelona',
+      cas: 'Barcelona',
+    },
     tax: '2,25€',
-    description: 'per nit',
+    description: {
+      val: 'per nit',
+      cas: 'por noche',
+    },
     image: require('../assets/images/cities/barcelona.webp')
   },
   berlin: {
-    name: 'Berlin',
+    name: {
+      val: 'Berlí',
+      cas: 'Berlín',
+    },
     tax: '5%',
-    description: "del cost de l'allotjament",
+    description: {
+      val: "del cost de l'allotjament",
+      cas: "del coste del alojamiento",
+    },
     image: require('../assets/images/cities/berlin.webp')
   },
   budapest: {
-    name: 'Budapest',
+    name: {
+      val: 'Budapest',
+      cas: 'Budapest',
+    },
     tax: '4%',
-    description: "del cost de l'allotjament",
+    description: {
+      val: "del cost de l'allotjament",
+      cas: "del coste del alojamiento",
+    },
     image: require('../assets/images/cities/budapest.webp')
   },
   lisbon: {
-    name: 'Lisboa',
+    name: {
+      val: 'Lisboa',
+      cas: 'Lisboa',
+    },
     tax: '1€',
-    description: 'per nit',
+    description: {
+      val: 'per nit',
+      cas: 'por noche',
+    },
     image: require('../assets/images/cities/lisboa.webp')
   },
   milan: {
-    name: 'Milan',
+    name: {
+      val: 'Milà',
+      cas: 'Milán',
+    },
     tax: '1 a 5€',
-    description: 'per nit',
+    description: {
+      val: 'per nit',
+      cas: 'por noche',
+    },
     image: require('../assets/images/cities/milano.webp')
   },
   nice: {
-    name: 'Niza',
+    name: {
+      val: 'Niça',
+      cas: 'Niza',
+    },
     tax: '0,6 a 4€',
-    description: 'per nit',
+    description: {
+      val: 'per nit',
+      cas: 'por noche',
+    },
     image: require('../assets/images/cities/niza.webp')
   },
   porto: {
-    name: 'Oporto',
+    name: {
+      val: 'Porto',
+      cas: 'Oporto',
+    },
     tax: '2€',
-    description: 'per nit',
+    description: {
+      val: 'per nit',
+      cas: 'por noche',
+    },
     image: require('../assets/images/cities/oporto.webp')
   },
   prague: {
-    name: 'Praga',
+    name: {
+      val: 'Praga',
+      cas: 'Praga',
+    },
     tax: '0,5€',
-    description: 'per nit',
+    description: {
+      val: 'per nit',
+      cas: 'por noche',
+    },
     image: require('../assets/images/cities/praga.webp')
   },
   vienna: {
-    name: 'Viena',
+    name: {
+      val: 'Viena',
+      cas: 'Viena',
+    },
     tax: '3%',
-    description: "del cost de l'allotjament",
+    description: {
+      val: "del cost de l'allotjament",
+      cas: "del coste del alojamiento",
+    },
     image: require('../assets/images/cities/viena.webp')
   },
   amsterdam: {
-    name: 'Amsterdam',
+    name: {
+      val: 'Àmsterdam',
+      cas: 'Amsterdam',
+    },
     tax: '7%',
-    description: "del cost de l'allotjament",
+    description: {
+      val: "del cost de l'allotjament",
+      cas: "del coste del alojamiento",
+    },
     image: require('../assets/images/cities/amsterdam.webp')
   },
   brussels: {
-    name: 'Brussel·les',
+    name: {
+      val: 'Brussel·les',
+      cas: 'Bruselas',
+    },
     tax: '4,24€',
-    description: 'per nit',
+    description: {
+      val: 'per nit',
+      cas: 'por noche',
+    },
     image: require('../assets/images/cities/brusseles.webp')
   },
   rome: {
-    name: 'Roma',
+    name: {
+      val: 'Roma',
+      cas: 'Roma',
+    },
     tax: '4 a 7€',
-    description: 'per nit',
+    description: {
+      val: 'per nit',
+      cas: 'por noche',
+    },
     image: require('../assets/images/cities/roma.webp')
   },
   valencia: {
-    name: 'València',
+    name: {
+      val: 'València',
+      cas: 'València',
+    },
     tax: '0€',
-    description: 'per nit',
+    description: {
+      val: 'per nit',
+      cas: 'por noche',
+    },
     image: require('../assets/images/cities/valencia.webp')
   }
 }
