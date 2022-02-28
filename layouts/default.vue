@@ -2,7 +2,8 @@
   <div class="campaign">
     <b-nav>
       <template #logo-append><nuxt-link to="/">Taxa turística</nuxt-link></template>
-      <b-nav-item to="/cas">En castellano</b-nav-item>
+      <b-nav-item v-if="lang=== 'val'" to="/cas">En castellano</b-nav-item>
+      <b-nav-item v-if="lang=== 'cas'" to="/">En valencià</b-nav-item>
     </b-nav>
     <Nuxt />
     <div class="footer-wrapper">
@@ -25,6 +26,12 @@
       BNav,
       BNavItem,
       BFooter
-    }
+    },
+
+    computed: {
+      lang() {
+        return this.$route.name === 'cas' ? 'cas' : 'val'
+      }
+    },
   }
 </script>
