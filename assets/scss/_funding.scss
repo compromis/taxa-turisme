@@ -19,7 +19,6 @@
 
     li:nth-child(even) {
       --offset-y: 50%;
-      // transform-origin: bottom left;
 
       &.active {
         --rotate: 4deg;
@@ -29,7 +28,6 @@
     li:nth-child(odd) {
       align-items: end;
       text-align: right;
-      // transform-origin: bottom right;
 
       &.active {
         --rotate: -4deg;

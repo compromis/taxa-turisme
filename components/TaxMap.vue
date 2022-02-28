@@ -4,7 +4,7 @@
       <div class="container">
         <div class="map-holder">
           <div class="tax-map">
-            <map-svg @set-city="(city) => setCity(city)" @unset-city="unsetCity" />
+            <map-svg :current-city="currentCity" @set-city="(city) => setCity(city)" @unset-city="unsetCity" />
           </div>
           <div class="background" aria-hidden="true">
             <div
@@ -21,7 +21,7 @@
             </div>
           </div>
           <transition name="card">
-            <div v-if="currentCard" class="card" :style="cardAbsolutePosition">
+            <div v-if="currentCard" class="card float-card" :style="cardAbsolutePosition">
               <h3 class="card-title">{{ currentCityCard.name }}</h3>
               <p class="card-tax">{{ currentCityCard.tax }}</p>
               <p class="card-description">{{ currentCityCard.description }}</p>
@@ -29,6 +29,16 @@
           </transition>
         </div>
       </div>
+    </div>
+    <div ref="cityCards" class="city-cards" @scroll="handleScroll">
+      <ul>
+        <li v-for="[ref, city] in Object.entries(cities)" :key="ref" class="card">
+          <h3 class="card-title">{{ city.name }}</h3>
+          <p class="card-tax">{{ city.tax }}</p>
+          <p class="card-description">{{ city.description }}</p>
+        </li>
+        <li class="spacer"></li>
+      </ul>
     </div>
   </div>
 </template>
@@ -59,6 +69,7 @@
       },
 
       cardAbsolutePosition () {
+        if (!this.cardPos) return null
         return {
           left: (this.cardPos.x + 20) + 'px',
           top: (this.cardPos.y + 20) + 'px'
@@ -82,6 +93,7 @@
 
       animateMap () {
         const tl = this.$gsap.timeline()
+        const vm = this
 
         tl.to('.tax-map', {
           scale: 1.8,
@@ -94,8 +106,7 @@
             scrub: true
           },
           onStart () {
-            console.log('start')
-            this.currentCity = 'valencia'
+            vm.currentCity = 'valencia'
           }
         })
       },
@@ -145,6 +156,15 @@
 
       unsetCity () {
         this.currentCard = null
+      },
+
+      handleScroll () {
+        const { cityCards } = this.$refs
+        const cities = Object.keys(this.cities)
+        const position = cityCards.scrollLeft + 50
+        const width = cityCards.scrollWidth - 200
+        const current = Math.floor(position / (width / cities.length))
+        this.currentCity = cities[current]
       }
     }
   }
@@ -153,6 +173,9 @@
 <style lang="scss" scoped>
 @import "../assets/scss/variables";
 @import "@compromis/blobby/scss/variables";
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
 
 .rail {
   height: 200vh;
@@ -209,6 +232,10 @@
   }
 }
 
+.city-cards {
+  display: none;
+}
+
 .card {
   position: fixed;
   top: 0;
@@ -251,5 +278,83 @@
 .card-enter, .card-leave-to {
   opacity: 0;
   transform: translateY(20%);
+}
+
+@include media-breakpoint-down(md) {
+  .rail {
+    height: auto;
+  }
+
+  .wagon {
+    height: auto;
+    margin-top: 0;
+    padding-top: 0;
+    overflow: visible;
+    position: static;
+  }
+
+  .tax-map {
+    top: 0;
+
+    svg {
+      height: auto;
+    }
+  }
+
+  .map-holder {
+    height: auto;
+  }
+
+  .background-city img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1.75rem;
+  }
+
+  .city-cards {
+    display: block;
+    overflow-y: auto;
+    padding: 2rem 0;
+    scroll-snap-type: x mandatory;
+    margin-top: -3.5rem;
+
+    ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .spacer {
+      width: 200px;
+      flex-shrink: 0;
+    }
+
+    .card {
+      position: static;
+      flex-shrink: 0;
+      margin-right: 1rem;
+      display: flex;
+      flex-direction: column;
+      height: 30vh;
+      width: calc(100vw - 4rem);
+      scroll-snap-align: center;
+
+      &-title {
+        font-size: 1.5rem;
+      }
+
+      &-tax {
+        font-size: 2.5rem;
+        margin-top: auto;
+      }
+
+      &-description {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .float-card {
+    display: none;
+  }
 }
 </style>

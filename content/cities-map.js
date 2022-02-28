@@ -59,12 +59,6 @@ export default {
     description: 'per nit',
     image: require('../assets/images/cities/praga.webp')
   },
-  valencia: {
-    name: 'València',
-    tax: '0€',
-    description: 'per nit',
-    image: require('../assets/images/cities/valencia.webp')
-  },
   vienna: {
     name: 'Viena',
     tax: '3%',
@@ -88,5 +82,11 @@ export default {
     tax: '4 a 7€',
     description: 'per nit',
     image: require('../assets/images/cities/roma.webp')
+  },
+  valencia: {
+    name: 'València',
+    tax: '0€',
+    description: 'per nit',
+    image: require('../assets/images/cities/valencia.webp')
   }
 }

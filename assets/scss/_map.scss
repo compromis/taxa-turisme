@@ -39,7 +39,16 @@
 @include media-breakpoint-down(md) {
   .map {
     .container {
-      margin-top: -32vh;
+      margin-top: 0;
+    }
+
+    .shift {
+      margin-top: -300px;
+      overflow: hidden;
+  
+      &-md {
+        margin-top: -50px;
+      }
     }
   }
 }

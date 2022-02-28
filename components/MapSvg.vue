@@ -12,26 +12,32 @@
       <path class="cls-1" d="M377.09,472.3s-.52-2.61-7.31,2.09-12,3.67-14.91,3.44-4.44,8.89,1.05,12.54-3.14,20.64-2.62,25.09,1.57,12.54,15.16,5.23,11-23.07,11-23.07,3.66-8.55,2.09-15.87S377.09,472.3,377.09,472.3Z" transform="translate(-9.25 -5.92)"/>
       <path class="cls-1" d="M384.35,428.08c-4.77.22-3.91,4.74-9.76,6.69s-7.75,7-7.49,12.26,1.64,16.17,5,16.45,6.69-.84,8.36-7.53,4.46-9.17,5-13.38S390.15,427.8,384.35,428.08Z" transform="translate(-9.25 -5.92)"/>
     </g>
-    <circle id="Barcelona" class="city cls-2" cx="246.73" cy="430.83" r="8.59" @mouseenter="setCity('barcelona')" @mouseleave="unsetCity()" />
-    <circle id="Athens" class="city cls-2" cx="634.85" cy="548.69" r="8.59" @mouseenter="setCity('athens')" @mouseleave="unsetCity()" />
-    <circle id="Berlin" class="city cls-2" cx="489.91" cy="199.54" r="8.59" @mouseenter="setCity('berlin')" @mouseleave="unsetCity()" />
-    <circle id="Paris" class="city cls-2" cx="301.55" cy="252" r="8.59" @mouseenter="setCity('paris')" @mouseleave="unsetCity()" />
-    <circle id="Budapest" class="city cls-2" cx="579.27" cy="355.24" r="8.59" @mouseenter="setCity('budapest')" @mouseleave="unsetCity()" />
-    <circle id="Milan" class="city cls-2" cx="404.22" cy="360.9" r="8.59" @mouseenter="setCity('milan')" @mouseleave="unsetCity()" />
-    <circle id="Lisbon" class="city cls-2" cx="30.16" cy="439.98" r="8.59" @mouseenter="setCity('lisbon')" @mouseleave="unsetCity()" />
-    <circle id="Nice" class="city cls-2" cx="339.96" cy="388.55" r="8.59" @mouseenter="setCity('nice')" @mouseleave="unsetCity()" />
-    <circle id="Porto" class="city cls-2" cx="61.49" cy="388.55" r="8.59" @mouseenter="setCity('porto')" @mouseleave="unsetCity()" />
-    <circle id="Prague" class="city cls-2" cx="506.99" cy="272.95" r="8.59" @mouseenter="setCity('prague')" @mouseleave="unsetCity()" />
-    <circle id="Vienna" class="city cls-2" cx="537.47" cy="324.67" r="8.59" @mouseenter="setCity('vienna')" @mouseleave="unsetCity()" />
-    <circle id="Brussels" class="city cls-2" cx="345.72" cy="224.17" r="8.59" @mouseenter="setCity('brussels')" @mouseleave="unsetCity()" />
-    <circle id="Rome" class="city cls-2" cx="447.82" cy="457.72" r="8.59" @mouseenter="setCity('rome')" @mouseleave="unsetCity()" />
-    <circle id="Amsterdam" class="city cls-2" cx="361.47" cy="188.97" r="8.59" @mouseenter="setCity('amsterdam')" @mouseleave="unsetCity()" />
-    <circle id="Valencia" class="city cls-3" cx="176.33" cy="463.95" r="11.32" @mouseenter="setCity('valencia')" @mouseleave="unsetCity()" />
+    <circle id="Barcelona" :class="['city', 'cls-2', { current: currentCity === 'barcelona'}]" cx="246.73" cy="430.83" r="8.59" @mouseenter="setCity('barcelona')" @mouseleave="unsetCity()" />
+    <circle id="Athens" :class="['city', 'cls-2', { current: currentCity === 'athens'}]" cx="634.85" cy="548.69" r="8.59" @mouseenter="setCity('athens')" @mouseleave="unsetCity()" />
+    <circle id="Berlin" :class="['city', 'cls-2', { current: currentCity === 'berlin'}]" cx="489.91" cy="199.54" r="8.59" @mouseenter="setCity('berlin')" @mouseleave="unsetCity()" />
+    <circle id="Paris" :class="['city', 'cls-2', { current: currentCity === 'paris'}]" cx="301.55" cy="252" r="8.59" @mouseenter="setCity('paris')" @mouseleave="unsetCity()" />
+    <circle id="Budapest" :class="['city', 'cls-2', { current: currentCity === 'budapest'}]" cx="579.27" cy="355.24" r="8.59" @mouseenter="setCity('budapest')" @mouseleave="unsetCity()" />
+    <circle id="Milan" :class="['city', 'cls-2', { current: currentCity === 'milan'}]" cx="404.22" cy="360.9" r="8.59" @mouseenter="setCity('milan')" @mouseleave="unsetCity()" />
+    <circle id="Lisbon" :class="['city', 'cls-2', { current: currentCity === 'lisbon'}]" cx="30.16" cy="439.98" r="8.59" @mouseenter="setCity('lisbon')" @mouseleave="unsetCity()" />
+    <circle id="Nice" :class="['city', 'cls-2', { current: currentCity === 'nice'}]" cx="339.96" cy="388.55" r="8.59" @mouseenter="setCity('nice')" @mouseleave="unsetCity()" />
+    <circle id="Porto" :class="['city', 'cls-2', { current: currentCity === 'porto'}]" cx="61.49" cy="388.55" r="8.59" @mouseenter="setCity('porto')" @mouseleave="unsetCity()" />
+    <circle id="Prague" :class="['city', 'cls-2', { current: currentCity === 'prague'}]" cx="506.99" cy="272.95" r="8.59" @mouseenter="setCity('prague')" @mouseleave="unsetCity()" />
+    <circle id="Vienna" :class="['city', 'cls-2', { current: currentCity === 'vienna'}]" cx="537.47" cy="324.67" r="8.59" @mouseenter="setCity('vienna')" @mouseleave="unsetCity()" />
+    <circle id="Brussels" :class="['city', 'cls-2', { current: currentCity === 'brussels'}]" cx="345.72" cy="224.17" r="8.59" @mouseenter="setCity('brussels')" @mouseleave="unsetCity()" />
+    <circle id="Rome" :class="['city', 'cls-2', { current: currentCity === 'rome'}]" cx="447.82" cy="457.72" r="8.59" @mouseenter="setCity('rome')" @mouseleave="unsetCity()" />
+    <circle id="Amsterdam" :class="['city', 'cls-2', { current: currentCity === 'amsterdam'}]" cx="361.47" cy="188.97" r="8.59" @mouseenter="setCity('amsterdam')" @mouseleave="unsetCity()" />
+    <circle id="Valencia" :class="['city', 'cls-3', { current: currentCity === 'valencia'}]" cx="176.33" cy="463.95" r="11.32" @mouseenter="setCity('valencia')" @mouseleave="unsetCity()" />
   </svg>
 </template>
 
 <script>
   export default {
+    props: {
+      currentCity: {
+        type: String,
+        default: ''
+      }
+    },
     methods: {
       setCity (city) {
         this.$emit('set-city', city)
@@ -46,6 +52,9 @@
 
 <style lang="scss" scoped>
   @import "../assets/scss/variables";
+  @import 'bootstrap/scss/functions';
+  @import 'bootstrap/scss/variables';
+  @import 'bootstrap/scss/mixins';
 
   .cls-1{
     fill: none;
@@ -69,7 +78,20 @@
     stroke-width: 2;
 
     &:hover {
-      stroke-width: 4;
+      r: 12;
+      stroke-width: 3;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .city {
+      r: 14;
+      stroke-width: 3.5;
+    }
+
+    .city.current {
+      r: 25;
+      stroke-width: 5;
     }
   }
 </style>

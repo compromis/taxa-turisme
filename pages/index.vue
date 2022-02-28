@@ -71,13 +71,13 @@
     <page-section id="Funding" class="funding">
       <p class="funding-text">
         La taxa turística no posa en perill<br>
-        el sector turístic, i a més <animated-underline id="FundingText1">millora</animated-underline><br>
-        <animated-underline id="FundingText2" :delay=".5">la qualitat de vida de les ciutats</animated-underline> i<br>
+        el sector turístic, i a més <animated-underline id="FundingText1">millora</animated-underline><br class="d-none d-md-block">
+        <animated-underline id="FundingText2" :delay=".5">la qualitat de vida</animated-underline> de les ciutats i<br>
         <animated-underline id="FundingText3" :delay="1">enforteix el turisme</animated-underline> en el territori.
       </p>
       <p class="funding-text">
           Esta xicoteta aportació crearía un<br>
-          <animated-underline id="FundingText4" :delay="1.5">Fons de sostenibilitat turística</animated-underline> per invertir<br>
+          <animated-underline id="FundingText4" :delay="1.5">Fons de sostenibilitat turística</animated-underline> per invertir<br class="d-none d-md-block">
           en serveis com...
       </p>
 
