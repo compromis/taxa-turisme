@@ -30,6 +30,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 3rem;
+
+    img {
+      width: 100%;
+    }
   }
 
   &-marquee {
