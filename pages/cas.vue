@@ -1,6 +1,6 @@
 <template>
   <main>
-    <floaty-section id="Intro" class="intro">
+    <page-section id="Intro" class="intro">
       <h2 class="intro-text" data-depth="0.2">
         <span class="intro-text-content">
           La <animated-underline id="IntroTextLine">tasa</animated-underline><br>
@@ -13,7 +13,7 @@
         <img src="~assets/images/cities/benidorm.jpg" alt="Los rasacacielos y la costa de Benidorm">
       </div>
       <animated-plane class="intro-plane" data-depth="0.1" />
-    </floaty-section>
+    </page-section>
     <page-section id="Map" class="map" no-container>
       <div class="shift">
         <div class="container">

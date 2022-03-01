@@ -2,13 +2,14 @@ $top-safe-area: 7rem;
 
 .intro {
   background: linear-gradient(to bottom, $green, $turquoise);
-  padding-top: $top-safe-area;
   overflow-x: hidden;
+  padding: 0;
+
+  .main-container {
+    padding-top: $top-safe-area;
+  }
 
   &-text {
-    z-index: 10;
-    height: calc(80vh - #{$top-safe-area * 2});
-
     &-content {
       display: block;
       font-size: $headline-lg;
@@ -16,7 +17,8 @@ $top-safe-area: 7rem;
       line-height: 1;
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
+      transform: translateY(-75%);
+      z-index: 10;
     }
   }
 
