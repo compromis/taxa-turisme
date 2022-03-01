@@ -12,8 +12,10 @@
       <div class="intro-postcard" data-depth="0.3">
         <img src="~assets/images/cities/benidorm.jpg" alt="Els gratacels i la costa de Benidorm">
       </div>
-      <animated-plane class="intro-plane" data-depth="0.1" />
     </floaty-section>
+    <div class="intro-plane-scene">
+      <animated-plane class="intro-plane" />
+    </div>
     <page-section id="Map" class="map" no-container>
       <div class="shift">
         <div class="container">

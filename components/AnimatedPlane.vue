@@ -18,19 +18,19 @@
           }
         })
 
-        tl.from('.intro-plane img', {
+        tl.from('.intro-plane', {
           x: '-100vh',
           y: '100vh',
           ease: 'easeOut.Power1',
           duration: 2
         })
-        .to('.intro-plane img', {
+        .to('.intro-plane', {
           x: '2vw',
           y: '-4vw',
           ease: 'linear',
           duration: 5
         })
-        .to('.intro-plane img', {
+        .to('.intro-plane', {
           x: '100vw',
           y: '-80vh',
           ease: 'easeIn.Power1',
@@ -40,7 +40,3 @@
     }
   }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
