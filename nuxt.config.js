@@ -20,13 +20,13 @@ export default {
       { hid: 'og:locale', property: 'og:locale', content: 'ca' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:description', property: 'og:description', content: description.val },
-      { hid: 'og:image', property: 'og:image', content: url.val + 'ogimage-val.jpg' },
+      { hid: 'og:image', property: 'og:image', content: url.val + 'ogimage-val.png' },
       { hid: 'og:url', property: 'og:url', content: url.val },
       { hid: 'twitter:site', property: 'twitter:site', content: '@compromis' },
       { hid: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
       { hid: 'twitter:title', property: 'twitter:title', content: title.val },
       { hid: 'twitter:description', property: 'twitter:description', content: description.val },
-      { hid: 'twitter:image', property: 'twitter:image', content: url.val + 'ogimage-val.jpg' },
+      { hid: 'twitter:image', property: 'twitter:image', content: url.val + 'ogimage-val.png' },
       { hid: 'twitter:url', property: 'twitter:url', content: url.val }
     ],
     link: [

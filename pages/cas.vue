@@ -162,11 +162,11 @@ export default {
         { hid: 'keywords', name: 'keywords', content: keywords.cas },
         { hid: 'og:locale', property: 'og:locale', content: 'es' },
         { hid: 'og:description', property: 'og:description', content: description.cas },
-        { hid: 'og:image', property: 'og:image', content: url.cas + 'ogimage-cas.jpg' },
+        { hid: 'og:image', property: 'og:image', content: url.cas + 'ogimage-cas.png' },
         { hid: 'og:url', property: 'og:url', content: url.cas },
         { hid: 'twitter:title', property: 'twitter:title', content: title.cas },
         { hid: 'twitter:description', property: 'twitter:description', content: description.cas },
-        { hid: 'twitter:image', property: 'twitter:image', content: url.cas + 'ogimage-cas.jpg' },
+        { hid: 'twitter:image', property: 'twitter:image', content: url.cas + 'ogimage-cas.png' },
         { hid: 'twitter:url', property: 'twitter:url', content: url.cas }
       ],
     }
