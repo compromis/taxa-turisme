@@ -1,0 +1,13 @@
+.city:hover {
+  r: 12;
+}
+
+@media (max-width: 768px) {
+  .city {
+    r: 14;
+  }
+
+  .city.current {
+    r: 25;
+  }
+}

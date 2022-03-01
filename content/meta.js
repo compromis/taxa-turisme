@@ -12,7 +12,7 @@ const keywords = {
 }
 const url = {
   val: 'https://taxaturistica.compromis.net/',
-  cas: 'https://taxaturistica.compromis.net/cas'
+  cas: 'https://taxaturistica.compromis.net/cas/'
 }
 
 export { title, description, keywords, url }
