@@ -43,8 +43,8 @@
             I encara no tenim taxa turística.
           </p>
           <p class="headline-sm">
-            Altres com Peníscola, Calp, Orpesa o Benidorm també són destins de referencia
-            europeus i converteixen el territori valencià en<br>
+            Altres com Peníscola, Calp, Orpesa o Benidorm també són destinacions de referència
+            europees i convertixen el territori valencià en<br>
             <animated-underline id="ValenciaMostVisited">un dels més visitats del món.</animated-underline>
           </p>
         </div>
@@ -78,7 +78,7 @@
         <animated-underline id="FundingText3" :delay="1">enforteix el turisme</animated-underline> en el territori.
       </p>
       <p class="funding-text">
-          Esta xicoteta aportació crearía un<br>
+          Esta xicoteta aportació crearia un<br>
           <animated-underline id="FundingText4" :delay="1.5">Fons de sostenibilitat turística</animated-underline> per invertir<br class="d-none d-md-block">
           en serveis com...
       </p>
@@ -117,8 +117,8 @@
     <page-section id="Conclusions" class="conclusions">
       <div class="headline-sm">En resum...</div>
       <div class="headline-2xl mt-4">Sí.</div>
-      <div class="headline-sm mt-4">La taxa turística afecta el turisme. Molt positivament. És just que els turistes contribuisquen a pagar el manteniment dels serveis dels que disfruten.</div>
-      <div class="headline-sm mt-4">A més, la taxa turística ajuda a crear un model de turisme amb projecció de futur, de qualitat, sostenible i que genera més riquesa. </div>
+      <div class="headline-sm mt-4">La taxa turística afecta el turisme. Molt positivament. És just que els turistes contribuïsquen a pagar el manteniment dels serveis dels quals disfruten.</div>
+      <div class="headline-sm mt-4">A més, la taxa turística ajuda a crear un model de turisme amb projecció de futur, de qualitat, sostenible i que genera més riquesa.</div>
       <div class="conclusions-annex-title">Més informació</div>
       <div class="conclusions-annex-grid mt-4">
         <a class="conclusions-annex-card row-span-2 focus-dark" href="https://valenciaplaza.com/tasa-turistica-cataluna-baleares-197-millones-ingresos-mas-viajeros" target="_blank" rel="noopener noreferer">
