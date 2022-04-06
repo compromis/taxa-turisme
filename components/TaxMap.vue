@@ -98,6 +98,7 @@
       animateMap () {
         const tl = this.$gsap.timeline()
         const vm = this
+        const vh = (coef) => window.innerHeight * (coef/100);
 
         tl.to('.tax-map', {
           scale: 1.8,
@@ -105,8 +106,8 @@
           duration: 3,
           scrollTrigger: {
             trigger: '.map-holder',
-            start: 'bottom 100vh',
-            end: 'bottom -150vh',
+            start: `center ${vh(70)}`,
+            end: `center ${vh(-200)}`,
             scrub: true
           },
           onStart () {
