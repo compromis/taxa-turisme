@@ -133,6 +133,18 @@
         <a class="conclusions-annex-card conclusions-annex-document focus-dark" href="https://www.liligo.es/magazine-viajes/tasas-turisticas-espana-europa" target="_blank" rel="noopener noreferer">
           <span class="document-tag">WEB</span> Las tasas turísticas en España y Europa en 2019
         </a>
+        <a class="conclusions-annex-card row-span-2 focus-dark" href="https://alicanteplaza.es/pachecomsccrucerosespaaunatasaturisticanocreaunefectodisuasorioenlademandaniinfluyealprogramar" target="_blank" rel="noopener noreferer">
+          <h2>Pacheco (MSC): "Una tasa turística no crea un efecto disuasorio en la demanda ni influye al programar"</h2>
+          <div class="mt-auto">Alicante Plaza</div>
+        </a>
+        <a class="conclusions-annex-card row-span-2 focus-dark" href="https://valenciaplaza.com/bbva-research-cree-que-la-tasa-turistica-podria-tener-un-efecto-positivo-si-a-cambio-se-mejoran-los-servicios" target="_blank" rel="noopener noreferer">
+          <h2>BBVA Research cree que la tasa turística podría tener un efecto "positivo" si a cambio se mejoran los servicios</h2>
+          <div class="mt-auto">Valencia Plaza</div>
+        </a>
+        <a class="conclusions-annex-card row-span-2 focus-dark" href="https://www.europapress.es/comunitat-valenciana/turismo-01076/noticia-72-asociaciones-vecinales-valencia-favor-tasa-turistica-20220325164603.html" target="_blank" rel="noopener noreferer">
+          <h2>El 72% de las asociaciones vecinales de València, a favor de la tasa turística</h2>
+          <div class="mt-auto">Europa Press</div>
+        </a>
         <a class="conclusions-annex-card row-span-2 focus-dark" href="https://valenciaplaza.com/la-tasa-turistica-por-que-solo-debemos-pagar-los-valencianos" target="_blank" rel="noopener noreferer">
           <h2>A favor de la tasa turística</h2>
           <div class="mt-auto">Málaga Hoy</div>
