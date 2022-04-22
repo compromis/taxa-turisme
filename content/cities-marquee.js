@@ -12,6 +12,5 @@ export default [
   { name: { val: 'Rotterdam', cas: 'Rotterdam' }, tax: '6,5%' },
   { name: { val: 'Torí', cas:'Turín' }, tax: '2,80 a 5€' },
   { name: { val: 'Florència', cas:' Florencia' }, tax: '4 a 5,50€ ' },
-  { name: { val: 'Zürich', cas: 'Zürich' }, tax: '2,20€' },
-  { name: { val: 'Kiev', cas: 'Kiev' }, tax: '1%' }
+  { name: { val: 'Zürich', cas: 'Zürich' }, tax: '2,20€' }
 ]
