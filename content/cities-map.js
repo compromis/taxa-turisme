@@ -37,7 +37,7 @@ export default {
   },
   berlin: {
     name: {
-      val: 'Berlí',
+      val: 'Berlín',
       cas: 'Berlín',
     },
     tax: '5%',
